@@ -9,14 +9,6 @@ public class App {
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
 		Organization obj = (Organization) context.getBean("organization");
-		System.out.println(obj.getBoardMembers());
-		System.out.println(obj.getBranchManagers());
-		System.out.println(obj.getCities());
-		System.out.println(obj.getDateOfEstablishment());
-		System.out.println(obj.getIpAddresses());
-		System.out.println(obj.getName());
-		System.out.println(obj.getOrgId());
-		System.out.println(obj.getShareValue());
-		System.out.println(obj.isListed());
+		System.out.println(obj.toString());
 	}
 }
